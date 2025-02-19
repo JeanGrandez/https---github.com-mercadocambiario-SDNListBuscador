@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Se asume que el endpoint de búsqueda es /search y recibe el parámetro "query"
-            const response = await fetch(`http://127.0.0.1:5000/search?query=${encodeURIComponent(query)}`);
+            const response = await fetch(`https://sdnlist-production.up.railway.app/search?query=${encodeURIComponent(query)}`);
             if (!response.ok) {
                 throw new Error('Error en la consulta');
             }
